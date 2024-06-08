@@ -33,7 +33,14 @@ const Income = (props) => {
         setDescription(e.target.value)
     }
 
-    
+    function saveIncome(e) {
+        e.preventDefault()
+        const income = { title, amount, date, category, description }
+        saveIncomeOnServer(income)
+            .then((response) => {
+                console.log(response.data)
+            })
+      }
 
 
     useEffect(() => {

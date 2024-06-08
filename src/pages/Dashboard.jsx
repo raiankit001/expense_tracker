@@ -34,12 +34,12 @@ const Dashboard = () => {
         <div className='text-center  text-lg font-bold p-4 rounded-md cursor-default shadow-xl'>Maximum Expense : <span className='text-red-500'>$ {stats.maxExpense}</span></div>
       </div>
     </div>
-    <div className='mx-10 bg-gray-800 p-2 rounded-lg m-2' >
+    {/* <div className='mx-10 bg-gray-800 p-2 rounded-lg m-2' >
       <div className='text-center px-10'>
         <h2>Income Chart</h2>
         <Chart chartStats={chartStats}/>
       </div>
-    </div>
+    </div> */}
     </>
 
   )
